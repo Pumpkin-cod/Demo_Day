@@ -18,9 +18,9 @@ const PostLists = () => {
     const renderCard = () =>
         posts.map((post) => (
             <div key={post.id} className="bg-white p-5 flex items-center justify-between">
-                <div>
-                    <h2 className="font-bold text-lg text-gray-700">{post.title}</h2>
-                    <p className="font-normal text-gray-600">{post.content}</p>
+                <div className="overflow-hidden">
+                    <h2 className="font-bold text-lg text-indigo-700 capitalize">{post.title}</h2>
+                    <p className="font-normal text-gray-600 whitespace-normal">{post.content}</p>
                 </div>
                 <div className="flex gap-4">
                     <Link to={`edit-post/${post.id}`}>
